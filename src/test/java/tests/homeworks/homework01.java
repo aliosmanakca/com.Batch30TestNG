@@ -12,6 +12,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
+import utilities.TestBase;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -56,6 +57,7 @@ public class homework01 {
         System.out.println(result.getText());
         String expected = "Java";
         Assert.assertTrue(result.getText().contains(expected),"Java kelimesini icermiyor");
+
     }
     @AfterClass
     public void tearDown(){
